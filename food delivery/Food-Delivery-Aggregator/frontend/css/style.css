@@ -1,0 +1,426 @@
+/* ========================================================
+   FOODIE EXPRESS - MAIN STYLESHEET
+   Theme: Clean Orange and White
+   Simple, Beginner-Friendly CSS with Responsive Design
+   ======================================================== */
+
+/* Reset basic margins and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------
+   NAVIGATION BAR
+   -------------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6600; /* Warm Orange */
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #e65c00; /* Darker orange for active/hover */
+}
+
+/* Cart badge count */
+.cart-badge {
+    background-color: #ffffff;
+    color: #ff6600;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+/* --------------------------------------------------------
+   HERO / BANNER SECTION
+   -------------------------------------------------------- */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+/* Search bar on home page */
+.search-container {
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 14px 22px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.search-button {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #e65c00;
+}
+
+/* --------------------------------------------------------
+   FEATURES / PROMO HIGHLIGHTS
+   -------------------------------------------------------- */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: -30px auto 40px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    border: 1px solid #ffe0cc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box h3 {
+    color: #ff6600;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* --------------------------------------------------------
+   RESTAURANT SECTION & CARDS
+   -------------------------------------------------------- */
+.section-container {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #333333;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #777777;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.restaurant-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(255, 102, 0, 0.15);
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    padding: 16px;
+}
+
+.restaurant-name {
+    font-size: 19px;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.restaurant-category {
+    font-size: 13px;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.restaurant-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.rating-badge {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Button style */
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+.btn-secondary {
+    background-color: #f1f1f1;
+    color: #444444;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* --------------------------------------------------------
+   FOOTER
+   -------------------------------------------------------- */
+.footer {
+    background-color: #222222;
+    color: #dddddd;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------
+   AUTH FORMS (LOGIN & REGISTRATION)
+   -------------------------------------------------------- */
+.auth-container {
+    max-width: 440px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.auth-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-top: 4px solid #ff6600; /* Orange Accent Top Border */
+    border-radius: 8px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-title {
+    color: #ff6600;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.25);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.auth-footer a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------
+   RESPONSIVE DESIGN (MOBILE & TABLET)
+   -------------------------------------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        border-radius: 12px;
+    }
+
+    .search-button {
+        padding: 12px;
+    }
+
+    .features-container {
+        margin-top: 20px;
+    }
+}
+

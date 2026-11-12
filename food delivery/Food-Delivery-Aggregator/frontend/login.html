@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Foodie Express</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">🍕 Foodie Express</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+            <li>
+                <a href="cart.html">
+                    Cart <span class="cart-badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 2. LOGIN FORM CONTAINER -->
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2 class="auth-title">Welcome Back!</h2>
+            <p class="auth-subtitle">Log in to order your favorite delicious meals</p>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="loginEmail" 
+                        class="form-control" 
+                        placeholder="Enter your email (e.g. user@example.com)" 
+                        required
+                    >
+                </div>
+
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input 
+                        type="password" 
+                        id="loginPassword" 
+                        class="form-control" 
+                        placeholder="Enter your password" 
+                        required
+                    >
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="btn">Login</button>
+
+            </form>
+
+            <!-- Link to Registration Page -->
+            <div class="auth-footer">
+                <p>Don't have an account yet? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>Foodie Express</strong>. All rights reserved.</p>
+        <p>Simple & Friendly Food Delivery Aggregator</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

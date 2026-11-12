@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Express - Fast & Fresh Food Delivery</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">🍕 Foodie Express</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+                <a href="cart.html">
+                    Cart <span class="cart-badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 2. WELCOME / HERO BANNER SECTION -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered To Your Doorstep</h1>
+            <p>Order from your favorite local restaurants in just a few clicks.</p>
+            
+            <!-- Food Search Bar -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search for restaurants, burgers, pizza, biryani..."
+                >
+                <button type="button" id="searchBtn" class="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. QUICK FEATURES / BENEFITS -->
+    <section class="features-container">
+        <div class="feature-box">
+            <h3>⚡ Fast Delivery</h3>
+            <p>Hot and fresh meals delivered in 30 minutes or less.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🍽️ Fresh Food</h3>
+            <p>Prepared with top quality ingredients by certified chefs.</p>
+        </div>
+        <div class="feature-box">
+            <h3>💳 Easy Payments</h3>
+            <p>Pay online easily or choose Cash on Delivery at your door.</p>
+        </div>
+    </section>
+
+    <!-- 4. POPULAR RESTAURANTS SECTION -->
+    <main class="section-container">
+        <h2 class="section-title">Popular Restaurants</h2>
+        <p class="section-subtitle">Discover the most loved dining spots near you</p>
+
+        <!-- Restaurant Cards Grid -->
+        <div class="restaurant-grid">
+
+            <!-- Restaurant 1: Pizza Palace -->
+            <div class="restaurant-card">
+                <img 
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" 
+                    alt="Pizza Palace" 
+                    class="restaurant-image"
+                >
+                <div class="restaurant-info">
+                    <h3 class="restaurant-name">Pizza Palace</h3>
+                    <p class="restaurant-category">Italian • Gourmet Pizza • Pasta</p>
+                    <div class="restaurant-meta">
+                        <span class="rating-badge">★ 4.8</span>
+                        <span>⏱️ 25-30 mins</span>
+                        <span>₹350 for two</span>
+                    </div>
+                    <a href="menu.html?restaurant=pizza-palace" class="btn">View Menu</a>
+                </div>
+            </div>
+
+            <!-- Restaurant 2: Burger Hub -->
+            <div class="restaurant-card">
+                <img 
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" 
+                    alt="Burger Hub" 
+                    class="restaurant-image"
+                >
+                <div class="restaurant-info">
+                    <h3 class="restaurant-name">Burger Hub</h3>
+                    <p class="restaurant-category">American • Smash Burgers • Fries</p>
+                    <div class="restaurant-meta">
+                        <span class="rating-badge">★ 4.6</span>
+                        <span>⏱️ 20-25 mins</span>
+                        <span>₹300 for two</span>
+                    </div>
+                    <a href="menu.html?restaurant=burger-hub" class="btn">View Menu</a>
+                </div>
+            </div>
+
+            <!-- Restaurant 3: Spice Corner -->
+            <div class="restaurant-card">
+                <img 
+                    src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600" 
+                    alt="Spice Corner" 
+                    class="restaurant-image"
+                >
+                <div class="restaurant-info">
+                    <h3 class="restaurant-name">Spice Corner</h3>
+                    <p class="restaurant-category">North Indian • Biryani • Curry</p>
+                    <div class="restaurant-meta">
+                        <span class="rating-badge">★ 4.7</span>
+                        <span>⏱️ 30-35 mins</span>
+                        <span>₹400 for two</span>
+                    </div>
+                    <a href="menu.html?restaurant=spice-corner" class="btn">View Menu</a>
+                </div>
+            </div>
+
+            <!-- Restaurant 4: Green Bowl Salad -->
+            <div class="restaurant-card">
+                <img 
+                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" 
+                    alt="Green Bowl Salad" 
+                    class="restaurant-image"
+                >
+                <div class="restaurant-info">
+                    <h3 class="restaurant-name">Green Bowl Salads</h3>
+                    <p class="restaurant-category">Healthy • Organic Bowls • Smoothies</p>
+                    <div class="restaurant-meta">
+                        <span class="rating-badge">★ 4.9</span>
+                        <span>⏱️ 15-20 mins</span>
+                        <span>₹250 for two</span>
+                    </div>
+                    <a href="menu.html?restaurant=green-bowl" class="btn">View Menu</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 5. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>Foodie Express</strong>. All rights reserved.</p>
+        <p>Simple & Friendly Food Delivery Aggregator</p>
+    </footer>
+
+    <!-- External JavaScript link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
